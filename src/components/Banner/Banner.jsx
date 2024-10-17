@@ -1,4 +1,5 @@
 import bannerImg from "../../assets/pet.webp";
+import Button from "../Button/Button";
 const Banner = () => {
   return (
     <section>
@@ -14,9 +15,7 @@ const Banner = () => {
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a.
         </p>
-        <button className="bg-teal-600 text-white rounded-xl  p-3 font-bold">
-          View More
-        </button>
+        <Button text={"View More"} />
         <img className="mx-auto" src={bannerImg} alt="" />
       </div>
     </section>

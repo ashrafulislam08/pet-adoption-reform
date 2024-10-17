@@ -1,7 +1,9 @@
 const NavItem = ({ text }) => {
   return (
     <li>
-      <a href="">{text}</a>
+      <a className="text-gray-500 font-semibold" href="">
+        {text}
+      </a>
     </li>
   );
 };
