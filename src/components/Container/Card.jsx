@@ -1,4 +1,5 @@
 import CardText from "./CardText";
+import { SecondaryButton } from "./SecondaryButton";
 
 export default function Card({ pet }) {
   console.log(pet);
@@ -20,10 +21,18 @@ export default function Card({ pet }) {
       <div>
         <h2 className="font-bold text-xl my-2">{pet_name}</h2>
         <CardText petTitle={"Breed: "} petText={breed} />
-        {/* <p>Birth: {date_of_birth ?? "Not available"} </p> */}
         <CardText petTitle={"Birth :"} petText={date_of_birth} />
-        {/* <p>Gender: {gender ?? "Not available"} </p> */}
         <CardText petTitle={"Gender:"} petText={gender} />
+        <CardText
+          petTitle={"Price:"}
+          petText={price ? "$" + price : undefined}
+        />
+      </div>
+      {/* Buttons */}
+      <div className="flex justify-between px-2">
+        <SecondaryButton btnText="Like" />
+        <SecondaryButton btnText="Adopt" />
+        <SecondaryButton btnText="Details" />
       </div>
     </div>
   );

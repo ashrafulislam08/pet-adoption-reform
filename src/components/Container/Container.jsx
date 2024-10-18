@@ -9,15 +9,13 @@ const Container = () => {
     );
   }, []);
   return (
-    <main className=" container mx-auto grid grid-cols-1 md:grid-cols-4 gap-3 py-7">
+    <main className="px-5 container mx-auto grid grid-cols-1 md:grid-cols-4 gap-3 py-7">
       <section className="col-span-3 gap-3 rounded-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {allPets.map((pet) => (
           <Card pet={pet} />
         ))}
       </section>
-      <section>
-        <img src={allPets[0].image} />
-      </section>
+      <section>{/* <img src={allPets[0].image} /> */}</section>
     </main>
   );
 };
