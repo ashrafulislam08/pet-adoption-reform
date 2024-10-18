@@ -10,7 +10,7 @@ export default function Categories() {
       .then((data) => setCategories(data.categories));
   }, []);
   return (
-    <div className="m-10 container mx-auto text-center flex gap-4 justify-center flex-wrap ">
+    <div className="m-10 container mx-auto text-center flex gap-1 lg:gap-4 justify-center flex-wrap ">
       {categories.map((category) => (
         <Category
           categoryImage={category.category_icon}
