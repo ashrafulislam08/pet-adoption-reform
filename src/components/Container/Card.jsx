@@ -2,7 +2,6 @@ import CardText from "./CardText";
 import { SecondaryButton } from "./SecondaryButton";
 
 export default function Card({ pet }) {
-  console.log(pet);
   const {
     date_of_birth,
     breed,
